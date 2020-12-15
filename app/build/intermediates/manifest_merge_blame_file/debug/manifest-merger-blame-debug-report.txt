@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aecro"
+4    android:versionCode="1"
+5    android:versionName="1.0.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:5:5-30:19
+12        android:allowBackup="true"
+12-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+13-->[com.android.support:support-compat:28.0.0] /Users/Vivi/.gradle/caches/transforms-2/files-2.1/b73d0db3c489aeab8b531c92b0313ef9/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_acro"
+15-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:7:9-39
+16        android:label="Muda Tela"
+16-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:8:9-34
+17        android:roundIcon="@mipmap/ic_acro_round"
+17-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:9:9-50
+18        android:supportsRtl="true"
+18-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity
+21-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:12:9-14:52
+22            android:name="com.example.mudatela.QuartaTela"
+22-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:13:13-39
+23            android:screenOrientation="portrait" />
+23-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:14:13-49
+24        <activity
+24-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:15:9-17:52
+25            android:name="com.example.mudatela.TerceiraTela"
+25-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:16:13-41
+26            android:screenOrientation="portrait" />
+26-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:17:13-49
+27        <activity
+27-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:18:9-20:52
+28            android:name="com.example.mudatela.SegundaTela"
+28-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:19:13-40
+29            android:screenOrientation="portrait" />
+29-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:20:13-49
+30        <activity
+30-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:21:9-29:20
+31            android:name="com.example.mudatela.MainActivity"
+31-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:22:13-41
+32            android:screenOrientation="portrait" >
+32-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:23:13-49
+33            <intent-filter>
+33-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:25:17-69
+34-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:27:17-77
+36-->/Users/Vivi/AndroidStudioProjects/MudaTela/app/src/main/AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>
