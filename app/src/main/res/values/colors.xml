@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB93E1</color>
+    <color name="colorPrimaryDark">#DE83F8</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="corAzul">#0036FF</color>
+    <color name="corVerde">#25DA00</color>
+    <color name="corAmarela">#F1EC09</color>
+    <color name="corLaranja">#FF7B00</color>
+    <color name="corVermelha">#FF0000</color>
+
+</resources>

@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaTela">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Queixas"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="545dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.169">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSintoma1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Desmaio/ Mal estar geral"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não responsiva"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alteração do nível de consciência ou estado mental + Sinais vitais"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sinais vitais alterados"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Encaminhamento de Centro de Saúde SEM urgência"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Dor abdominal/ Lombar/ Contrações uterinas"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Período expulsivo/ Prolapso de cordão umbilical/ Exteriorização de partes fetais"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor intensa 7 - 10/10/ Contrações a cada 2 minutos/ Hipertonia uterina/ Pós parto imediato"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor moderada 4 - 6/10/ Contrações a cada 3 ~ 5 minutos"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor leve 1 - 3/10/ Contrações com intervalo maior que 5 minutos/ Encaminhamento SEM urgência"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Dor de cabeça/ Tontura/ Vertigem"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apneia ou padrão respiratório ineficaz/ Choque"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alteração de consciência/ Dor intensa 7 - 10/10 de início abrupto ou progressivo/ Distúrbios de equilíbrio, zumbidos, perda da visão + Sinais vitais"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtn13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor moderada 4 - 6/10/ Náuseas e vômitos de início agudo ou persistente + Sinais vitais"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor leve 1 - 3/10/ Relato de náuseas e vômitos"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Falta de ar/ Sintomas respiratórios"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Estridor laríngeo/ Sinais de choque + Sinais vitais"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Padrão respiratório ineficaz/ Início agudo após trauma + Sinais vitais"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dispneia moderada/ Dor na garganta com placas/ Dor torácica moderada"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbtn19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Obstrução nasal com secreção amarelada/ Dor de garganta sem outras alterações/ Tosse produtiva persistente/ Febril"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbtn20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Febre/ Sinais de infecção"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Convulsão em atividade/ Sinais de choque + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Padrão respiratório ineficaz + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dor abdominal moderada em puérpera ou não/ Sinais de infecção em FO + febre/ Ingurgitamento mamário + Sinais flogísticos COM febre" />
+
+                <RadioButton
+                    android:id="@+id/rbtn24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lesões genitais agudas/ Ingurgitamento mamário + Sinais flogísticos SEM febre/ Queixas urinárias/ Dor leve 1 - 3/ Febril" />
+
+                <RadioButton
+                    android:id="@+id/rbtn25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Náuseas e vômitos"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Desidratação intensa com sinais de choque" />
+
+                <RadioButton
+                    android:id="@+id/rbtn27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Padrão respiratório inefficaz/ Sinais de desidratação COM repercussão hemodinâmica SEM sinais de choque + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vômitos COM sinais de desidratação SEM repercussão hemodinâmica + SInais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vômitos frequêntes SEM desidratação + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Perda de líquido via vaginal/ Secreções"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Trabalho de parto expulsivo + exteriorização de partes fetais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perda de líquido esverdeado espesso" />
+
+                <RadioButton
+                    android:id="@+id/rbtn33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Líquido claro em grande quantidade/ Contrações com intervalos de 3 a 5 minutos" />
+
+                <RadioButton
+                    android:id="@+id/rbtn34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quantidade atípica de perda de líquido/secreções" />
+
+                <RadioButton
+                    android:id="@+id/rbtn35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Perda de sangue via vaginal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não responsiva/ Sinais de choque/ Hemorragia exanguinante/ TP expulsivo/ Exteriorização de partes fetais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Confusão/letargia STV intenso (+ de 2 absorventes noturnos em 20 minutos) + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="STV moderado (1 absorvente noturno em 20 minutos) + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="STV leve (1 absorvente normal a cada 6h) + Sinais vitais" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Queixas urinárias"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hipertermia => 40ºC/ Dor intensa 7 - 10/ Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Retensão urinária/ Dor moderada 4 - 6/ Febre/ Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Algúria, disúria, polaciúria/ Lesões vulvares externas/ Febril/ Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Parada/Redução dos movimentos fetais"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Avaliar sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ausência ou redução por mais de 12h em gestação >= 26 semanas + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ausência ou redução de MF por mais de 12h em gestação de 22 a 26 semanas/ Por menos de 12h em gestação > 22 semamas + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Relato de convulsão"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não responsiva/ Convulsão em atividade/ Sinais vitais + Sinais de choque" />
+
+                <RadioButton
+                    android:id="@+id/rbtn52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alteração do estado mental/comportamento + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="História de perda de consciência/ História de trauma + Sinais vitais alterados" />
+
+                <RadioButton
+                    android:id="@+id/rbtn54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sinais vitais alterados" />
+
+                <RadioButton
+                    android:id="@+id/rbtn55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSintoma12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Outras queixas/ Situações"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgSim12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtn56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não responsiva/ Sinais de choque" />
+
+                <RadioButton
+                    android:id="@+id/rbtn57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Encaminhamento de outra unidade devido USG evidenciar risco de morte para o feto/ Alteração da PA no pré-natal + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Paciente em situação de violência física e/ou sexual/ Dor persistente na perna acompanhada de edema e rigidez da musculatura da panturrilha + Sinais vitais" />
+
+                <RadioButton
+                    android:id="@+id/rbtn59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IG acima de 41s e Encaminhamento de outro serviço devido USG envidenciar risco de morbidade ou alteração do LA/ Bartholinite" />
+
+                <RadioButton
+                    android:id="@+id/rbtn60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não prioritário" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <Button
+        android:id="@+id/bntClear"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/clear_button"
+        android:onClick="limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <Button
+        android:id="@+id/btnProx"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <Button
+        android:id="@+id/btnAnt"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/previous_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.348" />
+
+</android.support.constraint.ConstraintLayout>

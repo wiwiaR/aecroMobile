@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuartaTela">
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/previous_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="28dp"
+        android:text="Sinais Vitais"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="409dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSinalVital1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Sinais de choque"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgVital1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnVital1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sim" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Não" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSinalVital2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Pressão"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgVital2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnVital3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PAS >= 160 e/ou PAD >= 110" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PA >= 140/90 COM sintomas" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PAS >= 140~159 e/ou PAD >= 90~109 SEM sintomas" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PA menor que 139/89" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSinalVital3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Temperatura"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgVital3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnVital7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TAX >= 40ºC" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TAX entre 38,0ºC e 39,9ºC" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TAX menor que 37,9ºC (febril)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSinalVital4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Saturação"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgVital4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnVital10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O2 = 89% em ar ambiente" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O2 entre 90% e 94%" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O2 entre 95% e 97%" />
+
+                <RadioButton
+                    android:id="@+id/rbtnVital13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O2 >= 98%" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSinalVital5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:text="• Glicemia"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgVital5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="18dp">
+
+                <RadioButton
+                    android:id="@+id/rbtnVital14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dx menor que 50 mg/dl">
+
+                </RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/clear_button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintStart_toEndOf="@+id/btnPrevious"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+</android.support.constraint.ConstraintLayout>
